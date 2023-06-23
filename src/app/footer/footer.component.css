@@ -1,0 +1,64 @@
+footer {
+    background-color: black;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+}
+
+footer .socialmedia .fa-brands {
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+footer .socialmedia a {
+    color: white;
+    margin: 5px;
+}
+
+footer .socialmedia a:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+footer .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+footer .newsletter label {
+    margin-right: 20px;
+}
+
+footer .newsletter button {
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer .newsletter button:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+footer .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 15px;
+}
+
+footer .author p {
+    font-size: 18px;
+    color: white;
+}
