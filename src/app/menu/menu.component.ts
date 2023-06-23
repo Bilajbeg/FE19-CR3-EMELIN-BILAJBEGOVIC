@@ -8,9 +8,9 @@ import { CartService } from '../cart.service';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
-  dishes: IDishes[] = dishes;
+  dishes: Array<IDishes> = dishes;
 
   constructor(private cartService: CartService) { }
 

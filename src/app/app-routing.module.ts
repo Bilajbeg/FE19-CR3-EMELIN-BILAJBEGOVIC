@@ -16,7 +16,7 @@ const routes: Routes = [{
   path: "menu", component: MenuComponent
 },
 {
-  path: "dish/:indexFromRouting", component: DetailsComponent
+  path: "dish /:indexFromRouting", component: DetailsComponent
 },
 {
   path: "cart", component: CartComponent
