@@ -2,7 +2,7 @@ footer {
     background-color: black;
 }
 
-footer .socialmedia {
+/* footer .socialmedia {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +61,4 @@ footer .author {
 footer .author p {
     font-size: 18px;
     color: white;
-}
+} */
