@@ -1,1 +1,9 @@
-<p>cart works!</p>
+<div class="container" *ngFor="let dish of cart" style="margin-top: 20px; margin-bottom: 30px;">
+    <h2>Dish Details</h2>
+    <p>Total : {{total}} €</p>
+    <img src="{{dish.img}}" style="width: 400px;">
+    <p>{{dish.name}}</p>
+    <p>{{dish.price}}</p>
+    <p>{{dish.description}}</p>
+    <hr>
+</div>

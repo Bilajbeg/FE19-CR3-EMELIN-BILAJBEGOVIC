@@ -1,1 +1,8 @@
-<p>details works!</p>
+<div class="container" *ngIf="dish" style="margin-top: 20px; margin-bottom: 30px;">
+    <h2>Dish Details</h2>
+    <img src="{{dish.img}}" style="width: 400px;">
+    <p>{{dish.name}}</p>
+    <p>{{dish.price}}</p>
+    <p>{{dish.description}}</p>
+    <button (click)="addToCart()" class="btn btn-primary">Add To Cart</button>
+</div>
