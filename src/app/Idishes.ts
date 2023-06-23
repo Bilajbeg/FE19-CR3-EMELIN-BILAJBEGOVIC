@@ -1,6 +1,6 @@
 export interface IDishes {
     name: string;
-    image: string;
+    img: string;
     description: string;
     price: number;
     availability: boolean;

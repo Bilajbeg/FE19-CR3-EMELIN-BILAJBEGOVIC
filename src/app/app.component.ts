@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FE19-CR3-EMELIN-BILAJBEGOVIC';
+  title = 'Ristorante Il Gambero Rosso';
 }
