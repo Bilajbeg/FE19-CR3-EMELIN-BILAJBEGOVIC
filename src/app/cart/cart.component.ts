@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IDishes } from '../Idishes';
 import { CartService } from '../cart.service';
 
