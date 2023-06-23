@@ -1,13 +1,13 @@
 <h2>Menu List</h2>
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-    <div *ngFor="let product of menu; index as i">
+    <div *ngFor="let dish of dishes; index as i">
         <div class="card" style="width: 18rem;">
-            <img src="{{product.img}}" class="card-img-top" alt="...">
+            <img src="{{dish.img}}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">{{product.name}}</h5>
-                <p class="card-text">{{product.description}}</p>
-                <p class="card-text"><span id="euro">{{product.price}} €</span></p>
-                <a routerLink="/product/{{i}}" class="btn btn-primary">Details</a>
+                <h5 class="card-title">{{dish.name}}</h5>
+                <p class="card-text">{{dish.description}}</p>
+                <p class="card-text"><span id="euro">{{dish.price}} €</span></p>
+                <a routerLink="/dish/{{i}}" class="btn btn-primary">Details</a>
             </div>
         </div>
     </div>
