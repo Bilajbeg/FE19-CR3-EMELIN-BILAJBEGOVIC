@@ -59,7 +59,7 @@ footer .socialmedia a {
 }
 
 footer .socialmedia a:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: #00FF7F;
 }
 
 footer .author {
@@ -71,6 +71,6 @@ footer .author {
 }
 
 footer .author p {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
 }
