@@ -2,11 +2,49 @@ footer {
     background-color: black;
 }
 
-/* footer .socialmedia {
+a {
+    color: white;
+    margin: 5px;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+footer .newsletter {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer .newsletter label {
+    margin-right: 20px;
+}
+
+button {
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: gray;
+    color: white;
+
+
+    &:hover {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-top: 10px;
     background-color: black;
 }
 
@@ -24,32 +62,6 @@ footer .socialmedia a:hover {
     color: rgba(255, 255, 255, 0.4);
 }
 
-footer .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-footer .newsletter label {
-    margin-right: 20px;
-}
-
-footer .newsletter button {
-    font-size: 15px;
-    padding: 5px;
-    margin-left: 20px;
-    background-color: black;
-    color: white;
-}
-
-footer .newsletter button:hover {
-    color: rgba(255, 255, 255, 0.4);
-}
-
 footer .author {
     display: flex;
     justify-content: center;
@@ -61,4 +73,4 @@ footer .author {
 footer .author p {
     font-size: 18px;
     color: white;
-} */
+}
