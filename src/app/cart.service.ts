@@ -13,10 +13,10 @@ export class CartService {
   getCart() {
     return this.cart
   }
-  clearCart() {
-    this.cart = [];
-    return this.cart;
-  }
+  /*  clearCart() {
+     this.cart = [];
+     return this.cart;
+   } */
   calculateTotal() {
     let total: number = 0;
     for (let val of this.cart) {

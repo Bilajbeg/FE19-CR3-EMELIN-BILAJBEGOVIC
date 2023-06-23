@@ -1,41 +1,16 @@
+<p><br></p>
+<p><br></p>
 <h2>Menu List</h2>
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
     <div *ngFor="let dish of dishes; index as i">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem; margin-bottom: 15px;">
             <img src="{{dish.img}}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{dish.name}}</h5>
                 <p class="card-text">{{dish.description}}</p>
                 <p class="card-text"><span id="euro">{{dish.price}} €</span></p>
-                <a routerLink="/dish/{{i}}" class="btn btn-primary">Details</a>
+                <a routerLink="/dish/{{ i }}" class="btn btn-primary">Details</a>
             </div>
         </div>
     </div>
 </div>
-
-<!-- <h1 class="pt-3 text-center bg-danger bg-opacity-50 display-2">Our speciallies</h1> -->
-<!-- Card Container -->
-
-<!-- <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-    <div *ngFor="let dish of dishes; index as i">
-        <div class="img-task" style="background-image: url({{dish.img}});"></div>
-        <div class="card-body pb-2">
-            <h5 class="card-title">{{dish.name}}</h5>
-            <p class="card-text">{{dish.description}}</p>
-        </div>
-        <hr>
-        <div class="card-body py-2">
-            <span>{{dish.price | currency:"€"}}</span>
-        </div>
-        <hr>
-        <div class="card-body py-2">
-            <ng-template [ngIf]="dish.availability" [ngIfElse]="none">
-                <button class="btn btn-primary me-3" routerLink="/dishes/{{dishId}}">Details</button>
-                <button class="btn btn-success" (click)="addToCart(dishId)">Order</button>
-            </ng-template>
-            <ng-template #none>
-                <p class="text-danger">Sorry, this dish isn't available<b></b></p>
-            </ng-template>
-        </div>
-    </div>
-</div> -->

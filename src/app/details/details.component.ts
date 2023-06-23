@@ -25,7 +25,6 @@ export class DetailsComponent implements OnInit {
     this.route.params.subscribe((params: Params) => {
       this.index = +params['indexFormRouting'];
       this.dish = dishes[this.index];
-      console.log(this.index);
 
     });
   }
