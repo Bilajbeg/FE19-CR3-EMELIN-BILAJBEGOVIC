@@ -1,0 +1,11 @@
+.navbar {
+    height: 60px;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px gray;
+    text-shadow: 2px 2px 2px gray;
+}
+
+a:hover {
+    color: blue;
+    font-size: 24px;
+}
