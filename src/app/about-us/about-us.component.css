@@ -1,0 +1,39 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #333;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    height: 760px;
+    width: 100%;
+}
+
+
+/* Main content styles */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    padding: 20px;
+    background-color: lightblue;
+    height: 1200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px black;
+}
+
+#about {
+    margin-bottom: 30px;
+}
