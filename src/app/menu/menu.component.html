@@ -1,7 +1,5 @@
-<p><br></p>
-<p><br></p>
-<h2>Menu List</h2>
-<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+<h2 style="margin-top: 15px;">Menu List</h2>
+<div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
     <div *ngFor="let dish of dishes; index as i">
         <div class="card" style="width: 18rem; margin-bottom: 15px;">
             <img src="{{dish.img}}" class="card-img-top" alt="...">
@@ -9,7 +7,7 @@
                 <h5 class="card-title">{{dish.name}}</h5>
                 <p class="card-text">{{dish.description}}</p>
                 <p class="card-text"><span id="euro">{{dish.price}} €</span></p>
-                <a routerLink="dish/{{ i }}" class="btn btn-primary">Details</a>
+                <a routerLink="/dish/{{i}}" class="btn btn-primary">Details</a>
             </div>
         </div>
     </div>

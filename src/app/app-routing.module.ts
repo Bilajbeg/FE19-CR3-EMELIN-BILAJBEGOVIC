@@ -10,13 +10,14 @@ const routes: Routes = [{
   path: "", component: HomeComponent
 },
 {
-  path: "about-us", component: AboutUsComponent
-},
-{
   path: "menu", component: MenuComponent
 },
 {
-  path: "dish /:indexFromRouting", component: DetailsComponent
+  path: "about-us", component: AboutUsComponent
+},
+
+{
+  path: "dish/:id", component: DetailsComponent
 },
 {
   path: "cart", component: CartComponent
