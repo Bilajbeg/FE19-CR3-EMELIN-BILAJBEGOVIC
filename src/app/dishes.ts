@@ -33,7 +33,7 @@ export const dishes = [
         img: "./assets/tiramisu.jpg",
         name: "Tiramisu",
         price: 12,
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+        description: "Tiramisu is an elegant and rich layered Italian dessert made with espresso, mascarpone, eggs, sugar and cocoa powder.",
         availability: true
     },
 ]
