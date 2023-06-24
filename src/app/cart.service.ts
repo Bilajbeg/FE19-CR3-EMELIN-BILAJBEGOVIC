@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { IDishes } from './Idishes';
+import { Idishes } from './Idishes';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  cart: IDishes[] = [];
+  [x: string]: any;
+  cart: Idishes[] = [];
   constructor() { }
-  addCart(obj: IDishes) {
+  addToCart(obj: Idishes) {
     this.cart.push(obj);
   }
   getCart() {
@@ -24,4 +25,15 @@ export class CartService {
     }
     return total;
   }
+
+  calculateDiscount() {
+    let discount: number = 0;
+    let total: number = this.calculateTotal();
+    discount = total + (total * 0.1);
+    return discount;
+  }
+
 }
+
+
+

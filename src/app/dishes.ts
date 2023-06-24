@@ -1,18 +1,18 @@
 export const dishes = [
     {
-        img: "./assets/diavolo.jpg",
+        img: '/assets/diavolo.jpg',
         name: 'Pizza Diavolo',
         price: 12.50,
         description: "In Italian, pizza diavola means “deviled” pizza. And in this case, deviled means one thing: spicy.",
         availability: true
     }, {
-        img: "./assets/margerita.jpg",
+        img: "/assets/margerita.jpg",
         name: "Pizza Margerita",
         price: 6.90,
         description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
         availability: true
     }, {
-        img: "./assets/penne.jpg",
+        img: "/assets/penne.jpg",
         name: "Italian penne",
         price: 5.90,
         description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",

@@ -1,8 +1,28 @@
-<div class="container" *ngIf="dish" style="margin-top: 20px; margin-bottom: 30px;">
+<div><br><br></div>
+<div class="container" style="margin-top: 20px; margin-bottom: 30px;">
     <h2>Dish Details</h2>
     <p>{{dish.name}}</p>
     <img src="{{dish.img}}" style="width: 400px;">
-    <p>{{dish.price}}</p>
+    <p class="p-2">{{dish.price}}€</p>
     <p>{{dish.description}}</p>
-    <!--  <button (click)="addToCart()" class="btn btn-primary">Add To Cart</button> -->
+    <button (click)="addToCart()" class="btn btn-primary">Add To Cart</button>
 </div>
+
+
+
+<!-- 
+
+<div class="card-container">
+    <div class="card u-clearfix">
+        <div class="card-body">
+            <span class="card-number card-circle subtle">1</span>
+            <span class="card-author subtle">{{dish.name}}</span>
+            <h2 class="card-title">${{dish.price}}</h2>
+            <span class="card-description subtle">{{dish.description}}</span>
+            <button (click)="addToCart()" class="btn btn-success m-4">Add To Cart</button>
+            <span class="card-tag card-circle subtle">C</span>
+        </div>
+        <img src="{{dish.img}}" alt="" class="card-media" />
+    </div>
+    <div class="card-shadow"></div>
+</div> -->

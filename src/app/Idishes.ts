@@ -1,7 +1,7 @@
-export interface IDishes {
+export interface Idishes {
     name: string;
-    img: string;
+    img: any;
     description: string;
     price: number;
-    availability: boolean;
+    availability?: boolean;
 }

@@ -1,24 +1,39 @@
 import { Component, OnInit } from '@angular/core';
-import { IDishes } from '../Idishes';
-import { dishes } from '../dishes';
+import { ActivatedRoute, Params } from '@angular/router';
 import { CartService } from '../cart.service';
+import { dishes } from '../dishes';
+import { Idishes } from '../Idishes';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
 
-  dishes: Array<IDishes> = dishes;
+  dishes: Array<Idishes> = dishes;
 
-  constructor(private cartService: CartService) { }
+  dish: Idishes = {} as Idishes;
+  index: number = 0;
 
-  addToCart(id: number) {
-    this.cartService.addCart(dishes[id]);
+
+  constructor(private route: ActivatedRoute, private cartService: CartService) {
+
+  }
+  addToCart(dish: Idishes) {
+    /* alert("added to the card") */
+    this.cartService.addToCart(dish)
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      this.index = +params['indexFromRouting'];
+      this.dish = this.dishes[this.index]
+    });
   }
 
+
 }
+
+
+
