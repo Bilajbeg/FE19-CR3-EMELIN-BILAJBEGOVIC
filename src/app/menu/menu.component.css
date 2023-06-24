@@ -9,3 +9,19 @@ img {
     height: 200px;
 
 }
+
+.container {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card-body {
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+#avail {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}

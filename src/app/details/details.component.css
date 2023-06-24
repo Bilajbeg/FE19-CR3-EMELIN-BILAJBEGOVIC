@@ -1,9 +1,12 @@
 p {
     font-size: large;
-    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: 18px;
 }
 
 .container {
+    height: auto;
+    width: 100%;
     background-color: blanchedalmond;
     text-align: center;
     box-shadow: 3px 3px 3px gray;
@@ -12,4 +15,10 @@ p {
 
 .btn {
     margin-bottom: 5px;
+}
+
+img {
+    border: 2px solid gray;
+    border-radius: 10px;
+    border-style: groove;
 }

@@ -1,16 +1,20 @@
 <div class="head" style="height: 100px; "></div>
 <div class="container " style="background-color: #eeee;">
     <h2 style="margin-top: 15px;">Menu List</h2>
-    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
         <div *ngFor="let dish of dishes; index as i">
-            <div class="card" style="width: 18rem; margin-bottom: 15px;">
+            <div class="card" style="width: 20rem; margin-bottom: 15px;">
                 <img src="{{dish.img}}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{dish.name}}</h5>
+                    <hr>
                     <!-- <p class="card-text">{{dish.description}}</p> -->
-                    <p class="card-text"><span id="euro">{{dish.price}} €</span></p>
-                    <a routerLink="/dish/{{i}}" class="btn btn-primary m-4">Details</a>
-                    <button (click)="addToCart(dish)" class="btn btn-primary">Add To Cart</button>
+                    <!-- <p class="card-text"><span id="euro">{{dish.price}} €</span></p> -->
+                    <p id="avail" *ngIf="!dish.availability">Not available ! ! !</p>
+                    <div class="btn" *ngIf="dish.availability">
+                        <a routerLink="/dish/{{i}}" class="btn btn-primary m-4">Details</a>
+                        <button (click)="addToCart(dish)" class="btn btn-success">Add To Cart</button>
+                    </div>
                 </div>
             </div>
         </div>

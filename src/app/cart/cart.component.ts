@@ -24,25 +24,3 @@ export class CartComponent implements OnInit {
   }
 
 }
-/* 
-export class DetailsComponent implements OnInit {
-  dish: Idishes = {} as Idishes;
-  index: number = 0;
-
-
-  constructor(private route: ActivatedRoute, private cartService: CartService) {
-
-  }
-  addToCart() {
-    alert("added to the card")
-    this.cartService.addToCart(this.dish)
-  }
-
-  ngOnInit(): void {
-    this.route.params.subscribe((params: Params) => {
-      this.index = +params['indexFromRouting'];
-      this.dish = dishes[this.index]
-    });
-  }
-}
-*/

@@ -1,9 +1,12 @@
-<div class="container_1 ">
-    <h3>Menues Total: {{ (total) }}€</h3>
-    <hr style="color: black;">
-    <p>Amount + Service : <strong>{{ (discount) }}€</strong></p>
-    <hr style="color: black;">
-    <p *ngIf="total >40">Discount of : {{total * 0.15}} € <br> New Amount to pay : {{discount-total*0.15}} €</p>
+<div><br><br><br></div>
+<div class="position">
+    <div class="container_1 ">
+        <h3>Menues Total: {{ (total) }}€</h3>
+        <hr>
+        <p>Amount + Service : <strong>{{ (discount) }}€</strong></p>
+        <hr>
+        <p *ngIf="total >40">Discount of : {{total * 0.15}} € <br> New Amount to pay : {{discount-total*0.15}} €</p>
+    </div>
 </div>
 <hr>
 <div class="container" *ngFor="let dish of cart" style="margin-top: 20px; margin-bottom: 30px;">
