@@ -21,7 +21,7 @@ export class MenuComponent implements OnInit {
 
   }
   addToCart(dish: Idishes) {
-    /* alert("added to the card") */
+    alert("added to the card")
     this.cartService.addToCart(dish)
   }
 
