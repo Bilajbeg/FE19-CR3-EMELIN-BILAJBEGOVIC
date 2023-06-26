@@ -3,9 +3,10 @@
     <div class="container_1 ">
         <h3>Menues Total: {{ (total) }}€</h3>
         <hr>
-        <p>Amount + Service : <strong>{{ (discount) }}€</strong></p>
+        <p>Amount + Service 10% : <strong>{{ (discount) }}€</strong></p>
         <hr>
-        <p *ngIf="total >40">Discount of : {{total * 0.15}} € <br> New Amount to pay : {{discount-total*0.15}} €</p>
+        <h5 *ngIf="total >40">Total > 40€ you get 15% Discount : {{total * 0.15}} € <br> New Amount to pay :
+            {{discount-total*0.15}} €</h5>
     </div>
 </div>
 <hr>
